@@ -39,7 +39,7 @@
 
 3. Once you have done both steps 1 and 2. Run the following command in the root directory of your repository.
    > ` npm install `
-   This will install all the requiered dependencies you need to run CasterBot.
+  This will install all the requiered dependencies you need to run CasterBot.
    
 4. Now while in the root directory run the command below to start running CasterBot.
    > ` node bot.js `
@@ -60,26 +60,28 @@
 
 
 ## Documentation(s) of API(s):
-  - discord.io - __https://izy521.gitbooks.io/discord-io/content/__ - * *Discord API* *
-  - OWM - __https://openweathermap.org/appid__ - * *OpenWeatherMap API* *
+  - [__discord.io__](https://izy521.gitbooks.io/discord-io/content/) - *Discord API*
+  - [__Open Weather Map__](https://openweathermap.org/appid) - *OpenWeatherMap API*
 
 
 ## OWM (Open Weather Map) API:
 - __Code of Conduct OWM:__
-	- Not recommended to use more than once every 10 minutes due to data being updated on server in 10 minute increments
-	- server name __`api.openweathermap.org`__. **NEVER** use the IP address of the server.
-	- Make API call using `cityID` if possible instead cityName, coordinates and zipcode. List of city ids is in the __`city.list.json`__ file
-	-__In the words of the OWM website:__
+	1. Not recommended to use more than once every 10 minutes due to data being updated on server in 10 minute increments
+	2. server name __`api.openweathermap.org`__. **NEVER** use the IP address of the server.
+	3. Make API call using `cityID` if possible instead cityName, coordinates and zipcode. List of city ids is in the __`city.list.json`__ file
+	4. __In the words of the OWM website:__
 	>Please, mind that Free and Startup accounts have limited service availability. If you do not receive a response from the API, please, wait at least for 10 min and then repeat your request. We also recommend you to store your previous request.
 	
 - __OWM subscription:__
 >After a certain amount of API call we will get a block from OWM and we will requiere to switch to a paid subscription. Block will be notified using a response to an API call. Respone format:
-	```
-	    {
-		"cod": 429,
-		"message": "Your account is temporary blocked due to exceeding of requests limitation of your subscription type. Please choose the proper subscription http://openweathermap.org/price"
-	    }
-	```
+	
+	
+	{
+	   "cod": 429,
+	   "message": "Your account is temporary blocked due to exceeding of requests limitation of your subscription type. Please choose the proper subscription http://openweathermap.org/price"
+	}
+	
+
 - __Examples of API Calls:__
 	1. OWM Current Data API: Get current weather data for a certain `cityName`.
 - **_Syntax_**:
@@ -322,7 +324,5 @@
 
 
 
-### Documentation By :-
->
-> __Siddharth Gupta__
->
+# Documentation By :-
+> ## [Siddharth Gupta](sg8797@gmail.com)
